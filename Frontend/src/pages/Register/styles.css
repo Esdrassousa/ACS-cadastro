@@ -1,0 +1,52 @@
+.register-container{
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.register-container section.form{
+    width: 100%;
+    max-width: 800px;
+    margin-right: 50px;
+}
+
+.register-container section.form input{
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 2px solid #dcdce6;
+    border-radius: 10px;
+    padding: 0 30px;
+    margin-top: 8px;
+}
+
+.register-container  section.form h1{
+    font-size: 30px;
+    color: darkviolet;
+    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.register-container  section.form form a{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #41414d;
+    font-size: 18px;
+    margin-right: 100px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+.register-container  section.form form a svg{
+    margin-right: 8px;
+}
+
+
+
+
