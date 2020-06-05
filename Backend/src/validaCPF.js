@@ -1,3 +1,5 @@
+//validaçaõ do cpf seguindo o condigo da receita federal
+
 exports.TestaCPF = async (strCPF)=> {
 
     var Soma;
