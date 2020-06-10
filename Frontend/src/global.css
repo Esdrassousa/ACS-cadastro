@@ -26,6 +26,7 @@ button{
     height: 60px;
     background: rgb(119, 228, 228);
     border-radius: 8px;
+    text-align: center;
     font-weight: bold;
     margin-top: 16px;
     display: inline-block;

@@ -13,3 +13,11 @@ exports.getByNome = async(nome)=>{
     } , 'nome')
     return res
 }
+
+exports.authentication = async(data)=>{
+    var res = await User.findOne({
+        nome:data.nome,
+        password:data.password
+    }, 'nome')
+    return res
+}

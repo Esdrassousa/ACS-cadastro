@@ -33,6 +33,8 @@ export default function Register() {
         const response = await api.post('user', data)
             
             alert(`cadastrado`)
+            history.push('/');
+            
         }catch(e){
             alert(data.message)
         }
