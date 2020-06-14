@@ -11,21 +11,23 @@ import api from '../../services/api';
 //sem importancia
 export default function Logon(){
 
-  const[nome , setNome] = useState('');
-  const[password, setPassword] =useState('');
+  const[email , setEmail] = useState('');
+  const[senha, setSenha] =useState('');
+  const history = useHistory();
 
   async function handleLogon(e){
     e.preventDefault();
 
     const data = {
-        nome,
-        password
+        email,
+        senha
     };
 
     try{
 
       const response = await api.post('user/authentication' , data)
       alert('encontrado')
+      history.push('/cadastro')
 
     }catch(e){
       alert('erro')
@@ -42,11 +44,11 @@ export default function Logon(){
             <h1>Entre no Sistema</h1>
 
             <input className = "email" placeholder = "nome" 
-            value ={nome} onChange={e=>setNome(e.target.value)}>
+            value ={email} onChange={e=>setEmail(e.target.value)}>
 
             </input>
             <input className = "senha" placeholder = "sua senha" 
-            value={password} onChange={e => setPassword(e.target.value)}>
+            value={senha} onChange={e => setSenha(e.target.value)}>
 
             </input>
 
